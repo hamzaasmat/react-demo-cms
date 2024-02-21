@@ -1,0 +1,34 @@
+@import "../../theme/var";
+
+.responsive {
+    max-height: 60vh;
+    overflow-y: auto;
+    table {
+        width: 100%;
+        text-align: left;
+        border-collapse: collapse;
+        thead {
+            tr {
+                color: grey;
+                background-color: #f7f7f7;
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    color: $secondary;
+                    border-bottom: 1px solid #f7f7f7;
+                }
+                transition: 0.3s ease-in-out;
+                cursor: pointer;
+                &:hover {
+                    transform: translateY(-5px);
+                }
+            }
+        }
+        th,
+        td {
+            padding: 1em 1.5em;
+        }
+    }
+}
